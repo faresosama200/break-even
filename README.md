@@ -7,158 +7,158 @@
 </p>
 
 <h1 align="center">🎯 SmartBEP</h1>
-<h3 align="center">Intelligent Break-Even & Feasibility Analysis System</h3>
+<h3 align="center">نظام تحليل نقطة التعادل ودراسة الجدوى الذكي</h3>
 
 <p align="center">
-  <strong>AI-powered web application for analyzing business project feasibility, calculating break-even points, predicting financial performance, and generating smart recommendations.</strong>
+  <strong>تطبيق ويب مدعوم بالذكاء الاصطناعي لتحليل جدوى المشاريع التجارية، وحساب نقاط التعادل، والتنبؤ بالأداء المالي، وتوليد توصيات ذكية.</strong>
 </p>
 
 ---
 
-## 📋 Overview
+## 📋 نظرة عامة
 
-**SmartBEP** is a comprehensive financial analysis platform designed to help entrepreneurs, business analysts, and decision-makers evaluate the feasibility of business projects with confidence. The system leverages machine learning alongside classical financial calculations to provide deep insights and actionable recommendations.
+**SmartBEP** هو منصة تحليل مالي شاملة مصممة لمساعدة رواد الأعمال والمحللين الماليين وصناع القرار في تقييم جدوى المشاريع التجارية بثقة. يستفيد النظام من تعلم الآلة جنباً إلى جنب مع الحسابات المالية الكلاسيكية لتقديم رؤى عميقة وتوصيات عملية.
 
-### ✨ Key Features
+### ✨ الميزات الرئيسية
 
-| Feature | Description |
-|---------|-------------|
-| 📊 **Break-Even Analysis** | Calculates BEP in units and revenue, contribution margins, and margin ratios |
-| 🤖 **AI Risk Classification** | ML-based risk assessment (Low → Critical) using Random Forest & Gradient Boosting |
-| 📈 **Financial Forecasting** | Month-by-month revenue, cost, and profit projections with growth modeling |
-| 💡 **Smart Recommendations** | Context-aware, prioritized business recommendations based on analysis results |
-| 🔍 **Project Comparison** | Side-by-side comparison of multiple projects with visual charts |
-| 📑 **Detailed Reports** | Comprehensive analysis reports with charts and exportable data |
-| 🔐 **User Authentication** | Secure registration, login, and profile management |
-| 📱 **Responsive Design** | Clean, modern UI that works on desktop and mobile |
+| الميزة | الوصف |
+|--------|-------|
+| 📊 **تحليل نقطة التعادل** | حساب نقطة التعادل بالوحدات والإيرادات، وهوامش المساهمة، ونسب الهامش |
+| 🤖 **تصنيف المخاطر بالذكاء الاصطناعي** | تقييم المخاطر باستخدام ML (منخفض ← حرج) عبر Random Forest و Gradient Boosting |
+| 📈 **التنبؤ المالي** | توقعات شهرية للإيرادات والتكاليف والأرباح مع نمذجة النمو |
+| 💡 **توصيات ذكية** | توصيات أعمال مخصصة ومرتبة حسب الأولوية بناءً على نتائج التحليل |
+| 🔍 **مقارنة المشاريع** | مقارنة جنباً إلى جنب بين عدة مشاريع مع رسوم بيانية |
+| 📑 **تقارير مفصلة** | تقارير تحليل شاملة مع رسوم بيانية وبيانات قابلة للتصدير |
+| 🔐 **نظام المصادقة** | تسجيل آمن، تسجيل دخول، وإدارة الملف الشخصي |
+| 📱 **تصميم متجاوب** | واجهة مستخدم حديثة ونظيفة تعمل على الحاسوب والجوال |
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ هيكل المشروع
 
 ```
 SmartBEP/
 ├── app/
-│   ├── models/              # Database models (User, Project, FinancialInput, etc.)
-│   ├── routes/              # Flask Blueprints (auth, dashboard, projects, reports)
-│   ├── services/            # Business logic engines
-│   │   ├── ai_engine.py           # ML risk classification & feasibility scoring
-│   │   ├── financial_engine.py    # Core financial calculations (BEP, ROI, margins)
-│   │   ├── prediction_engine.py   # Revenue/profit forecasting & clustering
-│   │   └── recommendation_engine.py  # Smart recommendation generation
-│   ├── static/              # CSS, JavaScript, images
-│   ├── templates/           # Jinja2 HTML templates
-│   └── utils/               # Logging, validators, helpers
-├── data/                    # SQLite database & ML model storage
-├── tests/                   # Unit tests
-├── config.py                # Environment-based configuration
-├── run.py                   # Application entry point
-├── seed_data.py             # Sample data seeder
-└── start.bat                # Quick start script (Windows)
+│   ├── models/              # نماذج قاعدة البيانات (المستخدم، المشروع، المدخلات المالية، إلخ)
+│   ├── routes/              # مسارات Flask (المصادقة، لوحة التحكم، المشاريع، التقارير)
+│   ├── services/            # محركات منطق الأعمال
+│   │   ├── ai_engine.py           # تصنيف المخاطر وتقييم الجدوى بالذكاء الاصطناعي
+│   │   ├── financial_engine.py    # الحسابات المالية الأساسية (نقطة التعادل، العائد، الهوامش)
+│   │   ├── prediction_engine.py   # التنبؤ بالإيرادات/الأرباح والتجميع
+│   │   └── recommendation_engine.py  # توليد التوصيات الذكية
+│   ├── static/              # CSS، JavaScript، الصور
+│   ├── templates/           # قوالب Jinja2 HTML
+│   └── utils/               # السجلات، أدوات التحقق، المساعدات
+├── data/                    # قاعدة بيانات SQLite وتخزين نماذج ML
+├── tests/                   # اختبارات الوحدة
+├── config.py                # إعدادات حسب البيئة
+├── run.py                   # نقطة دخول التطبيق
+├── seed_data.py             # أداة تعبئة البيانات التجريبية
+└── start.bat                # سكربت التشغيل السريع (ويندوز)
 ```
 
 ---
 
-## ⚡ Quick Start
+## ⚡ التشغيل السريع
 
-### Prerequisites
-- **Python 3.10+** installed and available in `PATH`
+### المتطلبات الأساسية
+- **Python 3.10+** مثبت ومتاح في `PATH`
 
-### Option 1 — One-Click Start (Windows)
+### الطريقة 1 — تشغيل بنقرة واحدة (ويندوز)
 ```bash
 start.bat
 ```
-This script automatically creates a virtual environment, installs dependencies, initializes the database, and launches the server with browser auto-open.
+يقوم هذا السكربت تلقائياً بإنشاء بيئة افتراضية، وتثبيت المتطلبات، وتهيئة قاعدة البيانات، وتشغيل السيرفر مع فتح المتصفح تلقائياً.
 
-### Option 2 — Manual Setup
+### الطريقة 2 — الإعداد اليدوي
 ```bash
-# 1. Clone the repository
+# 1. استنساخ المستودع
 git clone https://github.com/faresosama200/break-even.git
 cd break-even
 
-# 2. Create and activate virtual environment
+# 2. إنشاء وتفعيل البيئة الافتراضية
 python -m venv .venv
-# Windows:
+# ويندوز:
 .venv\Scripts\activate
-# macOS/Linux:
+# ماك/لينكس:
 source .venv/bin/activate
 
-# 3. Install dependencies
+# 3. تثبيت المتطلبات
 pip install -r requirements.txt
 
-# 4. Initialize database with sample data
+# 4. تهيئة قاعدة البيانات بالبيانات التجريبية
 python seed_data.py
 
-# 5. Run the application
+# 5. تشغيل التطبيق
 python run.py
 ```
 
-🌐 Open your browser at **http://localhost:5000**
+🌐 افتح متصفحك على **http://localhost:5000**
 
-### Demo Account
-| Username | Password |
-|----------|----------|
+### الحساب التجريبي
+| اسم المستخدم | كلمة المرور |
+|--------------|-------------|
 | `demo` | `demo1234` |
 
 ---
 
-## 🔧 Technology Stack
+## 🔧 التقنيات المستخدمة
 
-| Layer | Technologies |
-|-------|-------------|
-| **Backend** | Python, Flask 3.1, Flask-Login, Flask-WTF, Flask-SQLAlchemy |
-| **AI/ML** | scikit-learn (Random Forest, Gradient Boosting, Linear Regression, KMeans) |
-| **Database** | SQLite with SQLAlchemy ORM |
-| **Frontend** | HTML5, CSS3, JavaScript, Bootstrap, Chart.js |
-| **Security** | Werkzeug password hashing, CSRF protection, session management |
-
----
-
-## 📊 Financial Calculations
-
-SmartBEP performs the following core calculations:
-
-- **Break-Even Point (Units)** = Fixed Costs ÷ (Selling Price − Variable Cost)
-- **Break-Even Point (Revenue)** = Fixed Costs ÷ Contribution Margin Ratio
-- **Contribution Margin** = Selling Price − Variable Cost per Unit
-- **Contribution Margin Ratio** = CM ÷ Selling Price
-- **Expected Profit** = Revenue − Total Costs
-- **ROI** = (Net Profit ÷ Initial Investment) × 100
-- **Safety Margin** = (Expected Volume − BEP Units) ÷ Expected Volume
+| الطبقة | التقنيات |
+|--------|----------|
+| **الخلفية (Backend)** | Python, Flask 3.1, Flask-Login, Flask-WTF, Flask-SQLAlchemy |
+| **الذكاء الاصطناعي** | scikit-learn (Random Forest, Gradient Boosting, Linear Regression, KMeans) |
+| **قاعدة البيانات** | SQLite مع SQLAlchemy ORM |
+| **الواجهة الأمامية** | HTML5, CSS3, JavaScript, Bootstrap, Chart.js |
+| **الأمان** | تشفير كلمات المرور Werkzeug، حماية CSRF، إدارة الجلسات |
 
 ---
 
-## 🤖 AI & Machine Learning
+## 📊 الحسابات المالية
 
-The system uses a **hybrid approach**:
+يقوم SmartBEP بإجراء الحسابات المالية الأساسية التالية:
 
-1. **Rule-Based Engine** — Works immediately with financial heuristics for risk assessment and feasibility scoring
-2. **ML Models** — Automatically trains when ≥20 historical projects are available:
-   - `RandomForestClassifier` for risk level classification
-   - `GradientBoostingRegressor` for feasibility score prediction
-   - `LinearRegression` for revenue/profit forecasting
-   - `KMeans` for similar project clustering
-
-Models are persisted in `data/models/` and loaded on startup.
-
----
-
-## 📁 Sample Projects Included
-
-The seed data includes diverse project types for demonstration:
-
-| Project | Industry | Fixed Costs | Price/Unit |
-|---------|----------|-------------|------------|
-| Organic Soap Production | Manufacturing | $15,000 | $12.00 |
-| Coffee Shop Startup | Food & Beverage | $45,000 | $5.50 |
-| Mobile App Development | Technology | $60,000 | $9.99 |
-| Handmade Jewelry | Handcraft | $5,000 | $55.00 |
-| Urban Farming Microgreens | Agriculture | $8,000 | $4.00 |
-| Risky Gadget Venture | Technology | $120,000 | $50.00 |
+- **نقطة التعادل (بالوحدات)** = التكاليف الثابتة ÷ (سعر البيع − التكلفة المتغيرة)
+- **نقطة التعادل (بالإيرادات)** = التكاليف الثابتة ÷ نسبة هامش المساهمة
+- **هامش المساهمة** = سعر البيع − التكلفة المتغيرة للوحدة
+- **نسبة هامش المساهمة** = هامش المساهمة ÷ سعر البيع
+- **الربح المتوقع** = الإيرادات − إجمالي التكاليف
+- **العائد على الاستثمار (ROI)** = (صافي الربح ÷ الاستثمار الأولي) × 100
+- **هامش الأمان** = (الحجم المتوقع − وحدات نقطة التعادل) ÷ الحجم المتوقع
 
 ---
 
-## 🧪 Running Tests
+## 🤖 الذكاء الاصطناعي وتعلم الآلة
+
+يستخدم النظام **نهجاً هجيناً**:
+
+1. **المحرك القائم على القواعد** — يعمل فوراً باستخدام قواعد مالية لتقييم المخاطر وتسجيل الجدوى
+2. **نماذج تعلم الآلة** — يتم التدريب تلقائياً عند توفر 20 مشروعاً تاريخياً أو أكثر:
+   - `RandomForestClassifier` لتصنيف مستوى المخاطر
+   - `GradientBoostingRegressor` للتنبؤ بدرجة الجدوى
+   - `LinearRegression` للتنبؤ بالإيرادات والأرباح
+   - `KMeans` لتجميع المشاريع المتشابهة
+
+يتم حفظ النماذج في `data/models/` وتحميلها عند بدء التشغيل.
+
+---
+
+## 📁 المشاريع التجريبية المضمنة
+
+تتضمن البيانات التجريبية أنواعاً متنوعة من المشاريع للعرض التوضيحي:
+
+| المشروع | القطاع | التكاليف الثابتة | سعر الوحدة |
+|---------|--------|-----------------|------------|
+| إنتاج الصابون العضوي | التصنيع | $15,000 | $12.00 |
+| مقهى ناشئ | الأغذية والمشروبات | $45,000 | $5.50 |
+| تطوير تطبيق جوال | التكنولوجيا | $60,000 | $9.99 |
+| مجوهرات يدوية | الحرف اليدوية | $5,000 | $55.00 |
+| زراعة حضرية للبراعم | الزراعة | $8,000 | $4.00 |
+| مشروع أجهزة عالي المخاطر | التكنولوجيا | $120,000 | $50.00 |
+
+---
+
+## 🧪 تشغيل الاختبارات
 
 ```bash
 python -m pytest tests/ -v
@@ -166,38 +166,38 @@ python -m pytest tests/ -v
 
 ---
 
-## ⚙️ Configuration
+## ⚙️ الإعدادات
 
-The application supports three environments configured in `config.py`:
+يدعم التطبيق ثلاث بيئات مُعدّة في `config.py`:
 
-| Environment | Debug | Database | Usage |
-|-------------|-------|----------|-------|
-| `development` | ✅ | SQLite (file) | Local development |
-| `production` | ❌ | SQLite (file) | Deployment |
-| `testing` | ✅ | SQLite (memory) | Unit tests |
+| البيئة | وضع التصحيح | قاعدة البيانات | الاستخدام |
+|--------|-------------|---------------|-----------|
+| `development` | ✅ | SQLite (ملف) | التطوير المحلي |
+| `production` | ❌ | SQLite (ملف) | النشر والإنتاج |
+| `testing` | ✅ | SQLite (ذاكرة) | اختبارات الوحدة |
 
-Set the environment via:
+تعيين البيئة عبر:
 ```bash
-set FLASK_ENV=development    # Windows
-export FLASK_ENV=development # Linux/macOS
+set FLASK_ENV=development    # ويندوز
+export FLASK_ENV=development # لينكس/ماك
 ```
 
 ---
 
-## 📄 License
+## 📄 الرخصة
 
-This project is licensed under the **MIT License**.
+هذا المشروع مرخص بموجب **رخصة MIT**.
 
 ---
 
-## 👤 Author
+## 👤 المؤلف
 
-**Fares Osama**
+**فارس أسامة**
 
 - GitHub: [@faresosama200](https://github.com/faresosama200)
 
 ---
 
 <p align="center">
-  <strong>⭐ Star this repository if you found it useful!</strong>
+  <strong>⭐ أعطِ نجمة للمستودع إذا وجدته مفيداً!</strong>
 </p>
